@@ -6,5 +6,3 @@ newDate = newDate.toLocaleDateString("en-IN",{
     month:"long",
     year:"numeric",
 });
-
-console.log(newDate);
