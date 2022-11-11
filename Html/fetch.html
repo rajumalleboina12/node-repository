@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <style>
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+      }
+
+      .item {
+        width: 400px;
+        background-color: skyblue;
+        border-radius: 10px;
+        font-size: 600px;
+        display: flex;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <p>List of all users...</p>
+    <div class="container" id="user_id"></div>
+
+    <script>
+      var users = [];
+      var url = "https:///users";
+      var data = fetch(url).then((response) => {
+        response.json().then((res) => {
+          console.log(res);
+          var finalHtml = "";
+          res.map((user) => {
+            finalHtml += `<div class="item">
+        <p>${user.name}-${user.website}</p>
+      </div>`;
+          });
+          document.getElementById("user_id").innerText = finalHtml;
+        });
+      });
+    </script>
+  </body>
+</html>

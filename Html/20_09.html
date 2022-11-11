@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <title>hello</title>
+  </head>
+  <body>
+    <p style="color: red" id="el1">hello</p>
+    <button onclick="changeclr();">change</button>
+    <p id="el2">i love node js</p>
+    <p id="el3">i love react</p>
+    <script>
+      //var element = document.getElementById("el1");
+      //var element1 = document.getElementById("el2");
+      //var element2 = document.getElementById("el3");
+      //setTimeout(() => {
+      //element.innerHTML = "<h3> Hello </h3";
+      //element.style.color = "blue";
+      //element1.innerHTML = "<h2>I Love NodeJs</h2>";
+      //element2.innerHTML = "<h1>I Love React</h1>";
+      //alert("text is going to change");
+      //}, 3000);
+
+      const changeclr = () => {
+        var element = document.getElementById("el1");
+        element.innerHTML = "<h1>Hello</h1>";
+        if (element.style.color === "red") {
+          element.style.color = "blue";
+        } else {
+          element.style.color = "red";
+        }
+        //element.style.color = "blue";
+      };
+    </script>
+  </body>
+</html>
