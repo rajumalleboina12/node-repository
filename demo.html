@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <style>
+            .container{
+                display: flex;
+                justify-content: space-around;
+            }
+
+            .child1,.child2{
+                display: flex;
+                width:100%;
+                justify-content:space-around;
+                background-color: aqua;
+            }
+
+            .child2{
+                background-color: burlywood;
+            }
+
+            @media screen and (max-width:992px){
+                .container{
+                    flex-direction: column;
+                }
+            }
+
+            @media screen and (max-width:576px){
+                .child1,.child2{
+                    flex-direction: column;
+                    align-items: center;
+                }
+
+        </style>
+    </head>
+    <body>
+        <h3>WELCOME TO MY COMPANY Proclink</h3>
+        <div class="container">
+            <div class="child1">
+                <div>Node Js</div>
+                <div>Java</div>
+            </div>
+            <div class="child2">
+                 <div>Phython</div>
+                 <div>JavaScript</div>
+            </div>
+        </div>
+    </body>
+</html>

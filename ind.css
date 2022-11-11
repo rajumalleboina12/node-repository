@@ -1,0 +1,74 @@
+.ind {
+  background-color: yellow;
+  color: blue;
+  width: 500px;
+}
+
+.ind1:hover {
+  margin: 0px 10px;
+}
+
+.ind:nth-child(even):hover {
+  background-color: chocolate;
+  color: white;
+  width: 500px;
+}
+
+.ind:nth-child(odd):hover {
+  background-color: crimson;
+  color: yellow;
+  width: 500px;
+}
+
+.maincss {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.parent {
+  background-color: yellow;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.parent-1 {
+  background-color: skyblue;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.parent-2 {
+  background-color: pink;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.child {
+  color: red;
+}
+
+.child:nth-child(even):hover {
+  color: white;
+}
+
+.child:nth-child(odd):hover {
+  color: darkgreen;
+}
+
+.image {
+  -webkit-box-reflect: below 2px;
+}

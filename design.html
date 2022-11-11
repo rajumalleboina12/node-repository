@@ -1,0 +1,119 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      .container {
+        width: 100%;
+        height: 500px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        background-image: linear-gradient(-150deg, hwb(224 14% 23%), rgb(202, 36, 180), yellow);
+        padding-left: 50px;
+        padding-right: 50px;
+      }
+
+      .item {
+        width: 100%;
+
+      }
+
+      .container-2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .image {
+        width: 200px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        -webkit-box-reflect: below 2px
+          linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+      }
+
+      .title {
+        font-size: 40px;
+        font-weight: 900;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+      }
+
+      .item1{
+        width:100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      @media screen and (max-width: 576px) {
+        .container {
+          display: flex;
+          height: auto;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+        .item container-2{
+          display:flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .image {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 130px;
+          height: 20px;
+        }
+
+      .item1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      }  
+    </style>
+  </head>
+  <body>
+    <div class="container">
+        <div class="item container-2">
+            <img
+              class="image"
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAdQAAABsCAMAAADkF7PyAAAAjVBMVEX/////cwz/bgD/agD/ZwD/bwD/cQD/ZgD/qH7/2Mf/rIX/uZr/YwD/r4n/fCj/8Or/3c7/wKT/+fb/x67/0b3/vZ//6N7/pHf/7OT/s5D/lFv/gzn/tZP/1cP/4tb/9fH/nGr/y7T/l2H/iUb/j1P/eB3/h0L/n2//lV7/fzD/jE3/eiL/hD3/kVX/VwAsuZJpAAASeUlEQVR4nO1daWOiPBBWEogHVvGs1Xq0tVa3ff//z3vlSiYzE4RqV3eX51uLQJInmTuh0aiA9WrbbW2Oi4fd7mFx3LS629Wwyv017gyryYuvhPB8PwiaJwSB73tCKP8lWt26bTW+g/FGSOE3WfinS/vxrVtYoxraG+Ui1BCr9oNbt7NGaUyCc4xmvMpmdOu21iiDYU+KoAyliZYVcl7bTXePufLKMprCk8tbt7lGIUZCVKM0hvC2t253DSceF9+gNIZ879+67TV4dMNS5hEHX9UW0z1i+P7NZZpCHGuD6e4wKOfFFCxWr44y3Rmi8DJKTwjC0a17UQNiJi/m9ATVuXU/ahh8XKRODcTm1j35nfi9RkTVt71didMTq08/0qE7RP9FKbl3jHR/0ps8XvV1S0+Fr1WMlrfiGFLgCSGlOkFKIbziEOK/wmpfxnalJ9bcxXkoPBHur/i6r3jZ+WG79A1FsvdEqHrtjNrT9WlODtfT9qjzrgqJ/Uck8CL1Ffwjc60nrz0S48zkEWVvmLk59dTDklnyg/kv6V7c4l+wlqYq621IpWw/dyTC6bVe95q5m6KkfxG57N5AiJ5TL0w7wpnKUf+AZzPKVwIzzBN9bXKt1+XTxC8n0gcu/1Q0z3AzClxLPPz7oxC9XFJ5NEXV0td6V3rbNF94wXuZnw8dxHheieUWCV4IB95fHzE0xFFl09HX5ld62yBnKXgo8/N3NjYYhCX1YitkZbD/dkkX/gQUkWpE87Uyku1KpHbZhertSmv4VZNdrPJvz9kUkTrMNZq61tsqkdpnFarcVHnhCzsvFOu//T0oIrWxTeRXEF6t3LISqZ+c8A3JKhsORr39x9fTpjV5psnwLjczWP/tL0IhqY32LyXVr+uVWlYhdcstMoWiFqv5IUzquf2kkFt6pN53zLEq/+6q4GJSTzJwdc1SkCqkcupQ2e7IZCdx+MgXcmbr3IGizwmCK3bq/nCO1OuiAqlzZqHanC4dxaKe+rJo5Zzd63ne94h7JXXIrC8rYrwtqCz0wxl8FieBS8cp/0TcK6k9Kn2hJzL8Ks6bex40BBjfSHR/on93gnsllXLmbczVlXe2ZCmEAZMPOkWcS3XVndtu+WocRaP2WdNiO+8aSdKezLvbYn/68TnqzpeT7aBSgGu17XZard5kXJQQPUPqYzSPXE7dqReWjptuJ8tlxLgVBm5S+9F8BHoXkbUV7MzVMR8qQqy9gMcH5AZXSuFDiZMZrTv2/KGkiKGavaKeTU82uCcX6R/dOLPrCRksXYRtX0Tym9OrRHiYlwunDKNjmNzkJYb+zOmVFJPaSfKprFER90KEG/3nLG3lqfc7txHiJLUbvwj4K01CAsgUjcqVoQngjVIT2CErOkkLgyw8sXqQWiQEXrhxBy1Smy1NUh71jBRs8Go4F1ZxZOCp1/Nu43qGtvp58pfDMysktZsKQbYOL+tFetfwJTQCLuC7EsNFapa41em/AZG+oHnbsqWFHgjyzogAlmy2Jnu214r/WCKJ4DvzdnlCK1yjKJackd+OmEyDr77ORLkmzC6iQBxYKVxIaj69Gf0TgV7Qqlz5xbfMQeoy49DLR2BDVKanf7wqXy4qQIKPyHOPDjdooN9gY4yKu+mE94x9sW1M7Amp8Gp64008Xz7zj05x5G39gEbYGsWkjnVAn77vCWS7GXHofbJN40kd5ZMnOGT/IcLSaMB1lTI0aVYW1dKcqaR/pYaNJ+5NjiqQvMHefI0GAyUZhztnVQav5s7dxRW+FpG61Neo/b8L9G2sOBRsFpwlta3vz0kd4+EMmvrXfDrOOVBGPJH7BFMo1c27LIeOQhrBpSHXOal+6wm/x8qGDJsFzXfv+NkV3CVpsruI1KIkub7UmvLiUHGqnyN1apZl/p497oNZqHTBFUKvfebOVG/a6Joua0Hs260JmY71jUilcwf+0EpSBL5nPzt0SOBX+6HIlCcC/tuk5q/xNzvevQDDacCQugaxPpV5AG5JyQWaCiHM7Ce6jAkAa1KzTKwvxPHlKZBgVLm4cd8dCvGhZ9UDPfPlbtOaHa1Yp2StJRg7OVmh4tdOWqV1EjtOl5Kaz0wvLr21X8XMaIZUIFlyDbjCQ2TeT43YZlIpKuOiX1ZGmYXSwvdKajp27d+IzNWYvoDJxASjEKm+OA1GVvsGi/agUFP77O1joC/ZogyYV/aCKPGWp3PQWyJyLiY1/YHXnSavkmbacbVllFSgIrUaJoJS5QPD5c1PM743nj5OB9Ebd3aAoYDMFSb+YJMKPJhncLOk4249Wm5ib2k1OZyIVVCiGjEaCOBQAe2NU4sxXsC0N8b38NU0VaGlehVSjVXUB/KesS4JqcBrENoNwg5N8Cu/0qGsSeC3rzuK6gLTDBzR8Kl/YpFqmQUrs1YFMWgsUo2X3h/BKJn1CCs61dKjECxIkx7NRLbPr3jSbcXlRtcgFRqEoOGMdMOkdgCnRvJgYkzdG1WL0u5P/0BoNz3GU8JMFg1IqrQX8ki474Oksv5vArPkFLKIzBKmIRGjNTwk+xb5XZi7K5AKI+0nL1lfYVwGRGoEpq7hlBhDIl8x1NXxyMQh2zSMnmoTsU4aCEj1cQDlU082hWO1kFRituh+6SXn4y09fd1lOiVMo310Rbvs+KZrkGpdMFUoTA2iTeqzESwCjODKOfYv2BSSTIydbKgK9ShjjSxJIB2QqvB8MbFLkmKHLo1zoZqRIZMCGIBYaZmZSE2Abb6JBZlul5OKemj6R1WPTeqK55QUJ5mYDJa+WIqlwKpTaD/u4LySw5Dqv5IHa+eNrjTTMib6lkGbCozi1FXuRP52nHQ39AQO0dy+nFRsemlKmDgUJLUP9Kk1SBO01HTLsPlquYDgJehnxuKfoZVOi1oMqYxpPHeOLyAVD4eB534tmIn4op6IXKykEXuU9OCDi0kl006rHmYjhyH1ABaUv7F+1MFDn7d5hJawciQ4USTRtBD7SrTPhlTGzBsY+YmCBIZUd/bf6E0q9cFYo8EwKoMVAetjGC6I7XJ58AHrEK34mM0aRkEcjsB5tpc09mi0wYWiB8SSyYHtKa2Tn9EFPIAWqfS5xoITSEYaUt07v8CUYK7qCYtMayOXK1SgX0wqWY9axjF3AfsTqjd7yb0hzacn9pfNtnszCDKftTmFTTBa1K1JZfQe0CxYGRtSGfGUwUVbChflZh5WKJW7mFSiezoFdxGnIhtca819YlLzKfpgX2AEZIZ3+4d6XeEQLWVOk8rq64VWfKjTwDp0zjTzaE7CPJoVaSllMxW4WebA5aRiC/IbpNrRsQO+mPcSGVDuHT7IINLye41JJQrQjDznmbzlz8WGPSDVafzq+khWQpum2W6a3iPsVDYMLicV9+I7pMKqssYDJjW/4FKVBKi+VDcRhzWs1yYwqTfO1tS5UuwYAlKdW5o7hfPFNM0WQMtC0eHA5aRi2+s7pFqG/B9NKmfZonGpROrcZRUX4XJScYatCqkg/2A0iVP8YlKdHiFKsusmXip+j+fFLxfjSvE98Wsa9OF6MMVNSRV7E6ze6B+9uwwlpFPdkg5FjvTqeaxgKHFj+HDeUOLT3PajqxhKWqcGNMLlxC1JDZ9BBMJsfnK6NDh04No5gaWs9vCIS0Ny0sal4Qo3jJ+KDIl+CW/yey6NiZlW2Kh3Q1Ljvcwm92xG0Rl8wDFhV/AGR550HKFK8IHR2G7N2XesM4iywQe7V2bE+CdPj4qq/9uRGiYe3Tt1eJ1hQmxlcQUzMX7ZS90Irgle60VhQircx84BLkNqcZhw5jCIjFgmAx1jFR9XLrBUuRmpKaewbCcPmZCAfj4TSTaV98fxQgUVThUC+oxw1/YXqFhNAUhlm5TgewF9k2nlalPTPde4bPVWpOrlZ4RtTh4O3erUGy0y5LQqqfY2TleV1Bt1d0zmj4jtUqQWpd5WztTb0TmTGmasUQjxRqSCElFj1WSV184kOXVyuULZB1wNo8d5WClJTqIqEZ2ROUqRWpQkN04YDvEChUCyMXrskCN1c1LBOQBZXtpZzpL+MDm0I389OThmeMDVEWZZVStnIUvVXAqxiVuKVFDOgp0aUyVJyllMrTs1yHXY8u5IBYOVHZriKjxLbvZnMXRsR9mmX5vuRjYTnBSeUfMZFp6hOq+NkczkDL5SpAJNg0+HMYX7ithnRvJgdRu57Ok7IBWU6QWo89m/M8dOmPabRef5kTY4B0daKQ9UEd55fK5EVMAOLM2jaSamHKnOSktT+MuoW2D32drm2VnIdgekwrmYrElSzJ3pPkAq9DiFeltux+No5nM1+kb/VS/mBpvR4bcZaGazHKkgIRzAYdsUF3ODTsEtVOALINjguwdSwTbvJCAzxaOftc1BavzRmXgDP386pVmoZMvG+W0XvujF4vBx4oP/Mx5JSVL71raLzFraggMU2W0XWzifFhl/z5+w3gDdcQ+kGoWfJZgcG6ScpBYAbOWttkEq3yMklFQSvo1zLUqSam118mXzZbZ/Vec3SMFNb4FQi6enhXUXWd53QSrYWZDsJ3JsZQSkDkqSCuxMHE4q3srot1xvKN7K6I4oJfiyJMHJirfUvGMr49A+BCxAdwliGly6P/UqpIKSssR4cWw6Tv4b7BI4RhxDmDHGwvfcpuMXckN6F3egddmV2mjQbSEGyrWV3LEFOIVHT88soqCIVGPbuEmlcS1ziLPtcw2NaEwsXSIpk6Wa3hzEKOgkBDgjjSxUtpLLkNpvfHLjL/gCBD3qTBGiDff3QkP3eV0DZuNX3iDmRFTdC0b9F13TNVjE2jAn79MKfW0CYffbDHlCKpG/CQNl9aiGNMNET25naxsgqY1P+kLXacN5DqHEobMbx0EedEM4wGPAr/Ag5HqhLQ5GGOlrTDpEm5JkarYL7tIzmqzifFSChG3myJ1WdVIF6PCeDAp75I5FauMFbwlwnrWxzNrGTGQC7lTFQL6eOVJtz3w+NhA7PlGlSWWuSfe13A2xt7ydfWLuqZEPpuQbazKhwByOtapKKjzCqOzhWDapjRHcvO+ro/vsuDRd4tMsAAd6ONai8LydBNOPEN0lH1z1qNl2QvbYp+xayN2b7s0J8N6chj5Bh31ipvIltcrSEHCQWTbMMXZN9gRgN0JYVu2TScIfY4dIbQyXTZUeNyflvujbJ49BfIzdoWwV/fZDpsfYJUfEdcp9VWUdHbMz9YSQ4WFecFf66S++sLznPsau8ao8eIgfQLfgiePkGqcIXuLneXn+gjlwcnZyGaV2GaUEf1DYKuqJzge+4B2TesLjeDLvdbdnx308X55fbgDTcbTszbujQaUD/R/b22gSjZ7PnWb4OOlFLoFedG2wnDuWfz/qTVx3DUe9Lt+iNnzenNKgput+f50lsMQw/gPnww1lC/j+Jf2Z42hYhtQaV8OQLtU03JLZYelCIw5tCs+2V8bMOT2OnSk1qT8KurrScbZI5T6eEAhpm9Zt7mBuhxlbk/qzoD5ICVJ9oR6QV8FxysVvE9Sk/iy2WABn4jdMTjEO098ozyD+OO4b+YQv/wkTl0lTk/rDwEdLisH0hOfePEbqE007c43uqM24kUv2Y0POr73VpP4wyPFm8WF1+jsWh9fX18+zHyJhj3ctKKOvSf1p0Bg8iNiGQRCwGROAAR8xle4Pddak/jheabhTkxq7KWc+ATrjcxtewfbdmtQfB/NR3PKkOj+Kiw8Og9DCwb17rcaFsM/LT74kkuvUM6RGvrNyoSjCpkNUV/u6aA0CcHphU2yfT8hjsLFnIx2krlruqLAq/MCvzjYWLecaFwKUCmUS8Rgqpf4btzoxmHTioNeU7nzOGdsq35pWZTN+jcowJwJntktSnJ9Vukah+mxF7Wl/eEJ/+hy1Fkrgr29anDrPrsqQnT/I1d/WuB6+tO3CkCris9ZP/quKD3uPM5TF1UuOCiOA9Itj539X4zLkrPKkVkEZrsaHUPnOY8tqXAuZBL6Y1LOyt8ZvREsBUr+E7+d1DZVIVWfiTzV+L5LNQBmpy/1sNtuPBu12e8B8KMGFgK20qnFDrIRvR+46YRyKKM+p75f7RmmN34jhq7BIZT5vXQT5Vul7wjV+Eyb/fZtU3/1pvBq3xRTG2CuQGshjHZ3/I1CeVOEXbVKpcWNMoiiaZNVFLeXcPG5T6ijwrXEniHnMN8istieM8RFmWPAKUceG7hxxpMHegFgYfPDlrraP7h5VSPWF3DvOo6xxTyhJanAi1JtV2qxU42agpE7CeD+gnx4XEAR+sjOwuYnq6NEfg+bDw8PO3tk6XI0nnc3X++HhcHj/2nQm41UdOrpD/A/RIPk1Ue8/ZQAAAABJRU5ErkJggg=="
+            />
+          </div>
+      <div class="item">
+        <h1 class="title">Proclink</h1>
+        <p>
+            About us
+            Founded in 2017 Proclink Consulting is a reputed firm providing world-class consulting & 
+            implementation services in the area of Oil & Gas, Mining and Manufacturing Industry.
+            
+            Being one of the best in class, Proclink offers an advanced digital transformation and tailor-made 
+            solutions as per clients need. We aim to continuously seek improvement in performance and deployment
+             of innovation keeping our focus on improving client marginal efficiency and productivity.
+        </p>
+      </div>
+      <div class="item1">  
+         <ul type="disc">
+            Our primary capabilities are in the following areas :
+            <li>Digital Transformation</li>
+            <li>Data, Analytics and AI</li>
+            <li>IT/OT Integration</li>
+            <li>Program and Project Management</li>
+            <li>Change Management</li>
+            <li>AR/VR</li>
+            <li>Product Development</li>
+         </ul>
+      </div>
+    </div>
+  </body>
+</html>
