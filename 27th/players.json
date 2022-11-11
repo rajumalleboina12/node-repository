@@ -1,0 +1,6 @@
+{
+  "1": { "id": 10, "name": "Virat", "category": "Batter" },
+  "2": { "id": 20, "name": "Dhoni", "category": "Keeper Batter" },
+  "3": { "id": 30, "name": "Rohit", "category": "Batter" },
+  "4": { "id": 40, "name": "Rahul", "category": "Batter" }
+}

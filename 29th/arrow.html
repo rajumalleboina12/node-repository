@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.29/browser.js"></script>
+    <script type="text/babel">
+      const person = {
+        name: "Avinash",
+        actions: ["eat", "cook", "sleep", "surf", "learn"],
+        printActions() {
+          this.actions.forEach((action) => {
+            console.log(this.name + "likes to" + action + "action");
+          });
+        },
+      };
+      person.printActions();
+    </script>
+    <title>Working with ES6</title>
+  </head>
+  <body>
+    <section></section>
+  </body>
+</html>
